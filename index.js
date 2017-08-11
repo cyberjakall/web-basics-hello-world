@@ -11,6 +11,7 @@ $(function() {
   $(".Button").click(function(){
     console.log("TEST");
     $("#results-area").text("WORKING!");
+    fetchRandomChuckNorrisJoke(Test);
   });
   /*
    * TODO: You will need to use a css selector to get jQuery to find the button element in the page
@@ -18,6 +19,9 @@ $(function() {
    * is clicked and pass it into the click function above...
    */
 });
+function Test(test) {
+  console.log(test);
+}
 
 // Gets a random chuck norris joke from an API, then passes it to the callback function
 function fetchRandomChuckNorrisJoke(callback) {
